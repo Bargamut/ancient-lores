@@ -12,7 +12,13 @@ const App = () => (
     }
 
     <div className="wrapper">
+      <header>Ancient Lores: Airbrush & Leather</header>
 
+      <footer className="site-footer">
+        <p>© 2020 Paul "Bargamut" Petrov</p>
+
+        <a href="https://bargamut.ru" target="__blank">bargamut.ru</a>
+      </footer>
     </div>
   </>
 );
