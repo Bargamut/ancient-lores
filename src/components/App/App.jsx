@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { YMInitializer } from 'react-yandex-metrika';
 
+import Button from '@material-ui/core/Button';
+
 const App = () => (
   <>
     {process.env.NODE_ENV === `production` &&
@@ -13,6 +15,10 @@ const App = () => (
 
     <div className="wrapper">
       <header>Ancient Lores: Airbrush & Leather</header>
+
+      <Button variant="contained" color="secondary">
+        Hello World!
+      </Button>
 
       <footer className="site-footer">
         <p>© 2020 Paul "Bargamut" Petrov</p>
