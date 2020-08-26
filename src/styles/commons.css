@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 350px;
+  max-width: 900px;
+}

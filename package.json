@@ -1,0 +1,44 @@
+{
+  "name": "ancientlores",
+  "version": "1.0.0",
+  "description": "Сайт пасспортизации реконструируемых комплексов",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:Bargamut/ancientlores.git",
+  "author": "Paul Petrov <paul@bargamut.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint::editorconfig": "editorconfig-checker -exclude '.git|node_modules|.DS_Store'",
+    "lint": "npm run lint::editorconfig",
+    "test": "npm run lint && jest",
+    "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
+    "dev": "webpack-dev-server --mode development --open --host 0.0.0.0",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "7.11.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "7.10.4",
+    "@types/jest": "26.0.9",
+    "@types/react": "16.9.46",
+    "babel-jest": "26.3.0",
+    "babel-loader": "^8.0.5",
+    "coveralls": "3.1.0",
+    "css-loader": "^2.1.0",
+    "editorconfig-checker": "3.1.0",
+    "jest": "26.3.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.11.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-yandex-metrika": "^2.6.0"
+  }
+}
