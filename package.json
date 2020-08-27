@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "lint::editorconfig": "editorconfig-checker -exclude '.git|node_modules|.DS_Store'",
-    "lint::eslint": "eslint --ext .js,.jsx src/",
+    "lint::eslint": "eslint --fix --ext .js,.jsx src/",
     "lint": "npm run lint::editorconfig && npm run lint::eslint",
     "test": "npm run lint && jest",
     "test::coverage": "npm test -- --coverage-reporters=text-lcov | coveralls",
@@ -45,13 +45,5 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-yandex-metrika": "^2.6.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "npm run lint"
   }
 }
