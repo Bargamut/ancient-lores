@@ -11,5 +11,5 @@ const mock = {
 it(`should be truly`, () => {
   const humansData = mock;
 
-  expect(humansData.events[0].title).toBe(`Hello, World!`);
+  expect(humansData.items[0].title).toBe(`Hello, World!`);
 });

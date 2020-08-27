@@ -15,7 +15,7 @@ const App = () => (
       <header>Ancient Lores: Airbrush & Leather</header>
 
       <footer className="site-footer">
-        <p>© 2020 Paul "Bargamut" Petrov</p>
+        <p>© 2020 Paul &quot;Bargamut&quot; Petrov</p>
 
         <a href="https://bargamut.ru" target="__blank">bargamut.ru</a>
       </footer>
