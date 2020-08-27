@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx}": "npm run lint",
+  "*.{png,jpg,jpeg,gif,svg}": "imagemin-lint-staged"
+}
